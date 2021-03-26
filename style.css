@@ -1,0 +1,39 @@
+section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    align-content: stretch;
+}
+div{
+    width:200px;
+    height:200px;
+    background-color: yellowgreen;
+}
+
+
+/*DeskTop*/
+@media only screen and (max-width:1024px) and (min-width:721px) {
+    body {
+      background-color: red;
+      
+    }
+  }
+/*Tablet*/
+  @media only screen and (max-width:720px) and (min-width:480px) {
+    body {
+      background-color: lightblue;
+    }
+  }
+/*Phone*/
+  @media only screen and  (max-width:480px) {
+    body {
+      background-color: pink;
+    }
+    div{
+        /* transition: all 3s ease-in-out;  */
+        /* transform: scale(0.75); */
+        width: 100px;
+        height: 100px;
+    }
+  }
